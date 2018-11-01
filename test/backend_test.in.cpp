@@ -2237,6 +2237,7 @@ NGRAPH_TEST(${BACKEND_NAME}, zero_sized_ceiling)
 
 NGRAPH_TEST(${BACKEND_NAME}, zero_sized_exp)
 {
+    make_unary_empty_test<op::Exp>("${BACKEND_NAME}");
 }
 
 NGRAPH_TEST(${BACKEND_NAME}, zero_sized_floor)
